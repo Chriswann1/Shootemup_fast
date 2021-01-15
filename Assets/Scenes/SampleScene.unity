@@ -200,7 +200,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0.38888884, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -247,6 +247,75 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &900301965536360908
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 900301966283464099, guid: 45692633318d1e74192e9640502f70ed,
+        type: 3}
+      propertyPath: m_Name
+      value: enemy_bat
+      objectReference: {fileID: 0}
+    - target: {fileID: 900301966283464126, guid: 45692633318d1e74192e9640502f70ed,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 900301966283464126, guid: 45692633318d1e74192e9640502f70ed,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 900301966283464126, guid: 45692633318d1e74192e9640502f70ed,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 900301966283464126, guid: 45692633318d1e74192e9640502f70ed,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 900301966283464126, guid: 45692633318d1e74192e9640502f70ed,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 900301966283464126, guid: 45692633318d1e74192e9640502f70ed,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 900301966283464126, guid: 45692633318d1e74192e9640502f70ed,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 900301966283464126, guid: 45692633318d1e74192e9640502f70ed,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 900301966283464126, guid: 45692633318d1e74192e9640502f70ed,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 900301966283464126, guid: 45692633318d1e74192e9640502f70ed,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 900301966283464126, guid: 45692633318d1e74192e9640502f70ed,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 45692633318d1e74192e9640502f70ed, type: 3}
 --- !u!1001 &6928690861056750702
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -307,6 +376,37 @@ PrefabInstance:
     - target: {fileID: 6928690860310506724, guid: 8c9275464432a02469e57e1cff181f0e,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6928690860310506725, guid: 8c9275464432a02469e57e1cff181f0e,
+        type: 3}
+      propertyPath: _bullet_
+      value: 
+      objectReference: {fileID: 1677105811944468283, guid: e4da81bcbb700194ba89f5991528f95f,
+        type: 3}
+    - target: {fileID: 6928690860310506725, guid: 8c9275464432a02469e57e1cff181f0e,
+        type: 3}
+      propertyPath: _bulletspeed_
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6928690860310506725, guid: 8c9275464432a02469e57e1cff181f0e,
+        type: 3}
+      propertyPath: _bulletoffset_.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6928690860310506725, guid: 8c9275464432a02469e57e1cff181f0e,
+        type: 3}
+      propertyPath: _speed_
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6928690860310506725, guid: 8c9275464432a02469e57e1cff181f0e,
+        type: 3}
+      propertyPath: fireRate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6928690860310506725, guid: 8c9275464432a02469e57e1cff181f0e,
+        type: 3}
+      propertyPath: _bulletoffset_.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6928690860310506729, guid: 8c9275464432a02469e57e1cff181f0e,
