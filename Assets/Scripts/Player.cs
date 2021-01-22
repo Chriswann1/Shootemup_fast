@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,15 +15,26 @@ public class Player : MonoBehaviour
     [SerializeField] private float _fireRate_;
     private float firetime = 0;
 
+    [SerializeField] private Camera _camera_;
+    private Vector2 boundlimit;
+    private Vector2 objectsize;
+
 
     public int healthPts;
     public bool death;
 
+    private void Start()
+    {
+        boundlimit = _camera_.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height));
+        objectsize = transform.GetComponent<SpriteRenderer>().bounds.extents;
+        
+    }
 
     void Update()
     {
         _movement_ = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         transform.Translate(_movement_.normalized * _speed_ * Time.deltaTime);
+        Correctpos();
 
 
         if (Input.GetButton("Fire1"))
@@ -52,5 +64,14 @@ public class Player : MonoBehaviour
             _spawnedbullet_.GetComponent<Rigidbody2D>().velocity = Vector2.right * _bulletspeed_;//lui donne sa vitesse
 
         }
+    }
+
+    void Correctpos()
+    {
+        Vector2 correctedpos;
+        correctedpos = transform.position;
+        correctedpos.x = Mathf.Clamp(correctedpos.x, boundlimit.x * -1 + objectsize.x, boundlimit.x - objectsize.x);
+        correctedpos.y = Mathf.Clamp(correctedpos.y, boundlimit.y * -1 + objectsize.y, boundlimit.y - objectsize.y);
+        transform.position = correctedpos;
     }
 }
