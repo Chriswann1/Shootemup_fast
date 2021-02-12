@@ -36,6 +36,7 @@ public class Player : MonoBehaviour
         transform.Translate(_movement_.normalized * _speed_ * Time.deltaTime);
         Correctpos();
 
+        if(healthPts <= 0) Destroy(this.gameObject);
 
         if (Input.GetButton("Fire1"))
         {
@@ -73,5 +74,10 @@ public class Player : MonoBehaviour
         correctedpos.x = Mathf.Clamp(correctedpos.x, boundlimit.x * -1 + objectsize.x, boundlimit.x - objectsize.x);
         correctedpos.y = Mathf.Clamp(correctedpos.y, boundlimit.y * -1 + objectsize.y, boundlimit.y - objectsize.y);
         transform.position = correctedpos;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("EnemyBullet")) healthPts--;
     }
 }

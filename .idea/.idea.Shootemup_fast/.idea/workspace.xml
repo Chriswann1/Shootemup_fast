@@ -4,10 +4,23 @@
     <list default="true" id="b1910845-a67b-4528-a4be-c789efd1963e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shootemup_fast/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shootemup_fast/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shootemup_fast/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shootemup_fast/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayerProto.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerProto.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/enemy_bat.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/enemy_bat.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/player_bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/player_bullet.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BackrgroundParalaxe.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BackrgroundParalaxe.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameplayManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameplayManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/scriptEnnemy1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/scriptEnnemy1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/mechant_.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/mechant_.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/piou_piou_ennemies.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/piou_piou_ennemies.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/piou_piou_sorcieres.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/piou_piou_sorcieres.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/sorciere.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/sorciere.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,12 +32,16 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../ShootThemUp Piscine/Assets/Scripts/Core/GameplayManager.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" />
+        <option value="$PROJECT_DIR$/../ShootThemUp Piscine/Assets/Scripts/Core/GameplayManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameplayManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/scriptEnnemy1.cs" />
       </list>
     </option>
   </component>
@@ -40,6 +57,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../OneDrive/Bureau/Build\Shootemup_fast.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\chris\OneDrive\Bureau\Build" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -72,6 +97,8 @@
       <workItem from="1610705777850" duration="18000" />
       <workItem from="1610706024759" duration="4878000" />
       <workItem from="1611310127103" duration="2480000" />
+      <workItem from="1611317547770" duration="515000" />
+      <workItem from="1613123550421" duration="3741000" />
     </task>
     <servers />
   </component>
