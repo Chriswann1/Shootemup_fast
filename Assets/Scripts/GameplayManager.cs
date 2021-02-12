@@ -13,8 +13,9 @@ public class GameplayManager : MonoBehaviour
     public Text lifeTxt;
     public GameObject Player;
     public Text scoreTxt;
-    public float Score = 0;
+    public int Score = 0;
     public bool heal = false;
+    public int scoreCount = 0;
 
     // Start is called before the first frame update
 
@@ -32,7 +33,8 @@ public class GameplayManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+
+
         if (Player != null)
         {
             lifeTxt.text = "Life:" + Player.GetComponent<Player>().healthPts;
@@ -47,10 +49,10 @@ public class GameplayManager : MonoBehaviour
             lifeTxt.text = "Life:99+";
         }
 
-        if (Score >= 1000 && heal == true) 
+        if (scoreCount >= 1000 ) 
         {
             Player.GetComponent<Player>().healthPts += 5;
-            heal = false;
+            scoreCount = 0;
         }    
     }
 }
