@@ -39,20 +39,22 @@ public class GameplayManager : MonoBehaviour
         {
             lifeTxt.text = "Life:" + Player.GetComponent<Player>().healthPts;
             scoreTxt.text = Score.ToString();
+            if (Player.GetComponent<Player>().healthPts > 99)
+            {
+                lifeTxt.text = "Life:99+";
+            }
+            if (scoreCount >= 1000 ) 
+            {
+                Player.GetComponent<Player>().healthPts += 5;
+                scoreCount = 0;
+            }    
         }
         if (Score <= 0)
         {
             Score = 0;
         }
-        if (Player.GetComponent<Player>().healthPts > 99)
-        {
-            lifeTxt.text = "Life:99+";
-        }
+        
 
-        if (scoreCount >= 1000 ) 
-        {
-            Player.GetComponent<Player>().healthPts += 5;
-            scoreCount = 0;
-        }    
+        
     }
 }

@@ -8,6 +8,7 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="BackgroundParalaxe.cs" t="Include" />
+          <e p="Boss.cs" t="Include" />
           <e p="Bullet.cs" t="Include" />
           <e p="GameplayManager.cs" t="Include" />
           <e p="Player.cs" t="Include" />

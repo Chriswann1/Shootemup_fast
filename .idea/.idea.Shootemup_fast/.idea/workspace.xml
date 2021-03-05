@@ -4,23 +4,10 @@
     <list default="true" id="b1910845-a67b-4528-a4be-c789efd1963e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shootemup_fast/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shootemup_fast/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shootemup_fast/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shootemup_fast/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayerProto.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerProto.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/enemy_bat.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/enemy_bat.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/player_bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/player_bullet.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameplayManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameplayManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/scriptEnnemy1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/scriptEnnemy1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/mechant_.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/mechant_.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/piou_piou_ennemies.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/piou_piou_ennemies.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/piou_piou_sorcieres.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/piou_piou_sorcieres.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/sorciere.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/sorciere.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +26,10 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" />
         <option value="$PROJECT_DIR$/../ShootThemUp Piscine/Assets/Scripts/Core/GameplayManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameplayManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/scriptEnnemy1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameplayManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Boss.cs" />
       </list>
     </option>
   </component>
@@ -98,7 +86,8 @@
       <workItem from="1610706024759" duration="4878000" />
       <workItem from="1611310127103" duration="2480000" />
       <workItem from="1611317547770" duration="515000" />
-      <workItem from="1613123550421" duration="3741000" />
+      <workItem from="1613123550421" duration="4093000" />
+      <workItem from="1614935859887" duration="5046000" />
     </task>
     <servers />
   </component>

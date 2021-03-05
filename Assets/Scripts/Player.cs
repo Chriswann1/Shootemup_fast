@@ -78,6 +78,10 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("EnemyBullet")) healthPts--;
+        if (other.CompareTag("EnemyBullet"))
+        {
+            healthPts--;
+            Destroy(other.gameObject);
+        }
     }
 }
