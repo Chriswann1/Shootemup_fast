@@ -15,6 +15,9 @@ public class GameplayManager : MonoBehaviour
     public int Score = 0;
     public bool heal = false;
     public int scoreCount = 0;
+    public bool bossSpawned;
+    public GameObject boss;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -45,6 +48,11 @@ public class GameplayManager : MonoBehaviour
         {
             Player.GetComponent<Player>().healthPts += 5;
             scoreCount = 0;
-        }    
+        }  
+        if (Score >= 3000 && bossSpawned == false)
+        {
+            bossSpawned = true;
+            Instantiate(boss, transform.position, transform.rotation) ;
+        }
     }
 }

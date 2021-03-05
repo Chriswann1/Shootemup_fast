@@ -23,6 +23,7 @@ public class scriptEnnemy1 : MonoBehaviour
         if (healthPts <= 0)
         {
             GameplayManager.Instance.Score += 100;
+            GameplayManager.Instance.scoreCount += 100;
             Destroy(gameObject);
         }
         if (other.gameObject.tag == "bullet")
