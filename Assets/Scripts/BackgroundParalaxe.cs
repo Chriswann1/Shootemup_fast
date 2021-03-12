@@ -7,6 +7,7 @@ public class BackgroundParalaxe : MonoBehaviour
     private float lenght, startPosition;
     public float parallaxe;
     public GameObject MainCam;
+    public int speed;
 
     public bool Infinite;
     // Start is called before the first frame update
@@ -23,6 +24,7 @@ public class BackgroundParalaxe : MonoBehaviour
         float dist = MainCam.transform.position.x * parallaxe;
 
         transform.position = new Vector3(startPosition + dist, transform.position.y, transform.position.z);
+       // transform.Translate(-transform.right * speed * Time.deltaTime);
 
         if (Infinite)
         {

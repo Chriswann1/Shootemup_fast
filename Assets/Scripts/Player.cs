@@ -5,8 +5,16 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    private Vector2 _movement_;
-    [SerializeField] private float _speed_;
+
+    private Vector2 speed = new Vector2(0.5f, 0.5f);
+    private Vector2 bulletspeed;
+
+    public int healthPts;
+
+    public bool death;
+
+    public double fireRate;
+     
 
     [SerializeField] private Vector3 _bulletoffset_;
     private GameObject _spawnedbullet_;
@@ -20,8 +28,6 @@ public class Player : MonoBehaviour
     private Vector2 objectsize;
 
 
-    public int healthPts;
-    public bool death;
 
     private void Start()
     {
@@ -31,7 +37,7 @@ public class Player : MonoBehaviour
     }
 
     void Update()
-    {
+    { }/*
         _movement_ = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         transform.Translate(_movement_.normalized * _speed_ * Time.deltaTime);
         Correctpos();
@@ -48,7 +54,7 @@ public class Player : MonoBehaviour
             death = true;
             Destroy(gameObject);
             GameplayManager.Instance.ShowGameOver();
-        }*/
+        }
 
         if (Input.GetButton("Cancel"))
         {
@@ -57,14 +63,21 @@ public class Player : MonoBehaviour
     }
 
     void Shoot()// commande le tir 
+
     {
-        if (Time.time > firetime)
+
+        if (Time.time > time)
+
         {
-            firetime = Time.time + _fireRate_;// lui limite sa cadence de tir
-            _spawnedbullet_ = Instantiate(_bullet_, transform.position + _bulletoffset_, transform.rotation);//instancie la bullet
-            _spawnedbullet_.GetComponent<Rigidbody2D>().velocity = Vector2.right * _bulletspeed_;//lui donne sa vitesse
+
+            GameObject spawnedbullet = Instantiate(spawnedbullet, transform.position + _bulletoffset_, transform.rotation);//instancie la bullet
+
+            spawnedbullet.GetComponent<Rigidbody2D>().velocity = bulletspeed;//lui donne sa vitesse
+
+            time = Time.time + fireRate;// lui limite sa cadence de tir
 
         }
+
     }
 
     void Correctpos()
@@ -83,5 +96,5 @@ public class Player : MonoBehaviour
             healthPts--;
             Destroy(other.gameObject);
         }
-    }
+    }*/
 }
